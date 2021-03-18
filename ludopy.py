@@ -1,3 +1,5 @@
+# code that plays ludo with 4 players
+
 import random
 
 playerList = ['A', 'B', 'C', 'D']
@@ -21,6 +23,7 @@ while  True:
             totalCount[player] = totalCount[player] + rolledVal
             for pl in totalCount:
                 if pl != currentPlayer:
+                    # when one player reaches same position of another player
                     if totalCount[pl] == totalCount[currentPlayer]:
                         choice = input('Will you like to kill player ' + pl + ' (y/n)? --> ')
                         if choice == 'y' or choice == 'Y':

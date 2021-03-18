@@ -1,3 +1,5 @@
+# code that finds number of non-consecutive occurances of flower names in a given sentence. 
+
 flowerList = ["rose", "lily", "jasmine", "sunflower", "tulip", "orchid"]
 og_userInput = "For those who work hard, should triumph finally. Roses and Tulips are red but rose is more red"
 
@@ -8,11 +10,13 @@ flower_count_indx = 0
 flowerCount = [0, 0, 0, 0, 0, 0]
 
 for flower in flowerList:
+    # flower character index
     fl_ch_indx = 0
     word_len = 0
     current_inp_indx = 0
 
     while (fl_ch_indx < len(flower)):
+        # getting character from flower
         ch_fl = flower[fl_ch_indx]
 
         inp_indx = current_inp_indx
